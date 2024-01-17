@@ -19,9 +19,28 @@ Archivo App.js:
 # Cambio 4
 
 # Preguntas:
+
 ¿Qué problemas específicos de rendimiento o mantenibilidad se identificaron en la aplicación original?
+
+Algunas lineas de codigo no importaban PropTypes y no por la misma razon no se validadba algunos componentes, tambien salio error
+
 ¿Cómo se aseguró que el refactoring no afectara negativamente la funcionalidad existente?
+
+Con la validacion de Validación de Props,Uso de React en el Ámbito JSX,Preservación de la Estructura Principal
+
 ¿Qué mejoras de rendimiento y mantenibilidad se lograron con el refactoring?
+
+PropTypes en Validación de Props: Facilita la comprensión del uso correcto del componente y ayuda a prevenir errores relacionados con las props.
+React en el Ámbito JSX:Esto mejora la mantenibilidad al hacer que el código sea más robusto para trabajar en el código en el futuro.
+
 ¿Cuáles fueron los desafíos más significativos durante el proceso de refactoring y cómo se superaron?
+
+Gestión de Dependencias: Refactorizando a menudo oara  implica  y gestionar dependencias entre componentes y módulos
+
 ¿Qué impacto tuvo el refactoring en la experiencia del usuario final?
+
+Tiempo de Carga y Respuesta: Se optimizo un poco con ayuda de la documentacion 
+
 ¿Cómo se podrían aplicar las lecciones aprendidas en este proyecto a futuros proyectos de desarrollo y refactoring?
+
+Se puedo aplicar 
