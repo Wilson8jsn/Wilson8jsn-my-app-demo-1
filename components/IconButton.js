@@ -1,5 +1,7 @@
+import React from 'react';
 import { Pressable, StyleSheet, Text } from 'react-native';
 import MaterialIcons from '@expo/vector-icons/MaterialIcons';
+import PropTypes from 'prop-types'; 
 
 export default function IconButton({ icon, label, onPress }) {
   return (
@@ -9,6 +11,13 @@ export default function IconButton({ icon, label, onPress }) {
     </Pressable>
   );
 }
+
+
+IconButton.propTypes = {
+  icon: PropTypes.string.isRequired,
+  label: PropTypes.string.isRequired,
+  onPress: PropTypes.func.isRequired,
+};
 
 const styles = StyleSheet.create({
   iconButton: {
