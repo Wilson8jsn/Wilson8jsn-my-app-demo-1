@@ -1,15 +1,22 @@
+import React from 'react';
 import { View, Pressable, StyleSheet } from 'react-native';
 import MaterialIcons from '@expo/vector-icons/MaterialIcons';
+import PropTypes from 'prop-types'; // Importa PropTypes para la validación de tipos
 
 export default function CircleButton({ onPress }) {
   return (
     <View style={styles.circleButtonContainer}>
       <Pressable style={styles.circleButton} onPress={onPress}>
-        <MaterialIcons name="add" size={38} color="#25292e" />
+        <MaterialIcons name="add" size={38} color="#FF2D00" />
       </Pressable>
     </View>
   );
 }
+
+// Agregada la validación de tipos con PropTypes
+CircleButton.propTypes = {
+  onPress: PropTypes.func.isRequired,
+};
 
 const styles = StyleSheet.create({
   circleButtonContainer: {
@@ -17,7 +24,7 @@ const styles = StyleSheet.create({
     height: 84,
     marginHorizontal: 60,
     borderWidth: 4,
-    borderColor: "#ffd33d",
+    borderColor: "#FF2D00",
     borderRadius: 42,
     padding: 3,
   },

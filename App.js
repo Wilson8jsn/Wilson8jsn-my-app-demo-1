@@ -1,6 +1,5 @@
-import { useState, useRef } from 'react';
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, View, Platform } from 'react-native';
+import React, { useState, useRef } from 'react';
+import { StatusBar, View, Platform } from 'react-native';
 import * as ImagePicker from 'expo-image-picker';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import * as MediaLibrary from 'expo-media-library';
@@ -15,7 +14,7 @@ import EmojiPicker from './components/EmojiPicker';
 import EmojiList from './components/EmojiList';
 import EmojiSticker from './components/EmojiSticker';
 
-const PlaceholderImage = require('./assets/images/background-image.png');
+import PlaceholderImage from './assets/images/background-image2.jpg';
 
 export default function App() {
   const [isModalVisible, setIsModalVisible] = useState(false);
@@ -126,7 +125,7 @@ export default function App() {
   );
 }
 
-const styles = StyleSheet.create({
+const styles = {
   container: {
     flex: 1,
     backgroundColor: '#25292e',
@@ -149,4 +148,4 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'center',
   }
-});
+};
