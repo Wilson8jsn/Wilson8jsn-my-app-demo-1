@@ -43,4 +43,4 @@ Tiempo de Carga y Respuesta: Se optimizo un poco con ayuda de la documentacion
 
 ¿Cómo se podrían aplicar las lecciones aprendidas en este proyecto a futuros proyectos de desarrollo y refactoring?
 
-Se puedo aplicar 
+Se puedo aplicar para un modelo de guia para el desarrollor de app en el futuro 
